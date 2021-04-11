@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Vanilla Jacascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id voluptatibus, voluptatem  dolore et natus aut libero             
+            </h2>
+            <img src="img/foto.jpeg" alt="">
+            <a href="#" onclick="toggle()">Leia Mais</a>
+        </div>
+    </div>
+
+    <div id="popup">
+        <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Id voluptatibus, voluptatem  dolore et natus aut libero
+        </h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, 
+            eos corrupti nostrum totam aspernatur incidunt! Vero iste doloribus 
+            debitis sed velit, aspernatur molestias laudantium obcaecati, quis 
+            beatae, placeat vel temporibus?
+        </p>
+        <a href="#" onclick="toggle()">Fechar</a>
+    </div>
+
+</body>
+
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
+</html>
